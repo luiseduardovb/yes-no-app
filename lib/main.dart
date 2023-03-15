@@ -10,15 +10,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Yes No App',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
-        ),
-        body: Center(
-          child: FilledButton.tonal(
-              onPressed: () {}, child: const Text('Click Me')),
-        ),
-      ),
-    );
+        theme: AppTheme(selectedColor: 6).theme(),
   }
 }
